@@ -1,0 +1,41 @@
+.title-wrap {
+    padding: 50px;
+    background: linear-gradient(rgba(0, 0, 0, 0.2)), url('https://cdn.theculturetrip.com/wp-content/uploads/2017/02/sao-paulo-photo-diogo-torres-silvestreflick.jpg');
+    padding-bottom: 220px;
+}
+
+.location{
+    font-size: 40px;
+}
+
+.city {
+    font-weight: 300;
+}
+
+.weather-tag{
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.weather-icon {
+    vertical-align: top;
+    height: 150px;
+    width: 150px;
+}
+
+.degree {
+    font-size: 130px;
+    font-weight: 300;  
+}
+
+.celcius {
+    font-size: 50px;
+    vertical-align: top;
+}
+
+.time-wrap{
+    font-size: 30px;
+    font-weight: 300;
+    float: right;
+    line-height: 50px;
+}
