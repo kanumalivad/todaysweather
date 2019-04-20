@@ -1,15 +1,20 @@
 import React from 'react';
 import './week-day.scss';
-import logo from '../../assets/amcharts_weather_icons_1.0.0/animated/cloudy.svg';
 
 class WeekDay extends React.Component {
+
+    constructor(props) {
+        super(props);
+    }
+
     render() {
+        console.log(this.props.icon);
         return (
-            <div className="day-wrap">
-                <span className="day--active">Saturday</span>
-                <img src={logo} className="day-icon"/>
-                <div class="date-wrap">
-                    <span className="day-date">31</span>
+            <div className={this.props.isActive ? 'day-wrap--active' : 'day-wrap'} onClick={this.props.onClick}>
+                <span className={this.props.isActive ? 'day--active' : 'day'}>{this.props.day}</span>
+                <img src={this.props.icon} className="day-icon"/>
+                <div className={this.props.isActive ? 'date-wrap--active' : 'date-wrap'}>
+                    <span className="day-date">{this.props.temprature}</span>
                     <span className="day-celcius">&#8451;</span>
                 </div>
             </div>

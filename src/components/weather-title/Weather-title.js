@@ -1,6 +1,6 @@
 import React from 'react';
 import './weather-title.scss';
-import logo from '../../assets/amcharts_weather_icons_1.0.0/animated/cloudy.svg';
+import logo from '../../assets/amcharts_weather_icons_1.0.0/animated/day-1.svg';
 
 class WeatherTitle extends React.Component {
     render() {

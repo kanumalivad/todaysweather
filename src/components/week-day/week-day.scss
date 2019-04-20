@@ -5,15 +5,33 @@
     justify-content: center;
     align-items: center;
     padding: 20px 30px 20px 30px;
+    border-radius:10px;
+    border: 1px solid #fff;
+}
+
+.day-wrap--active {
+    color: rgb(122, 121, 121);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px 20px 30px;
+    border-radius:10px;
+    border: 1px solid #fff;
+    box-shadow: 0 0 11px rgba(8, 8, 8, 0.2); 
+}
+
+.day-wrap:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
 }
 
 .day {
-    font-size: 20px;
-    padding-bottom: 20px;
+    font-size: 15px;
 }
 
 .day--active {
     color: rgba(0, 0, 0, 0.822);
+    font-size: 15px;
 }
 
 .day-icon {
@@ -26,6 +44,6 @@
     vertical-align: top;
 }
 
-.date-wrap {
-    
+.date-wrap--active {
+    color: rgba(0, 0, 0, 0.822);   
 }
