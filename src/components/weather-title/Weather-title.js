@@ -1,12 +1,7 @@
 import React from 'react';
 import './weather-title.scss';
 
-
 class WeatherTitle extends React.Component {
-
-    constructor(props) {
-        super(props);
-    }
 
     render() {
         const dateandtime = new Date ( this.props.location.localtime );
@@ -26,7 +21,7 @@ class WeatherTitle extends React.Component {
                 </div>
                 <div className="weather-tag">{this.props.weather.text}</div>
                 <div className="temprature-wrap">
-                    <img src={this.props.weather.icon} className="weather-icon"/>
+                    <img src={this.props.weather.icon} className="weather-icon" alt="icon"/>
                     <span className="degree">{this.props.weather.temp_c}</span>
                     <span className="celcius">&#8451;</span>
                 </div>

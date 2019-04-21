@@ -66,37 +66,37 @@ class App extends React.Component{
     }
 
     getWeatherIcon(code, isDay) {
-        if('1000' == code) {
+        if( 1000 === code) {
             return isDay ? Sunny : Clear;
         }
-        else if('1003' == code) {
+        else if( 1003 === code) {
             return isDay ? PartialyCloudyDay : PartialyCloudyNight;
         }
-        else if('1006' == code) {
+        else if( 1006 === code) {
             return isDay ? CloudyDay : CloudyNight;
         }
-        else if('1009' == code || '1030' == code || '1135' == code || '1147' == code || '1204' == code || '1207' == code ) {
+        else if( 1009  === code || 1030 === code || 1135 === code || 1147 === code || 1204 === code || 1207 === code ) {
             return Cloudy;
         }
-        else if( '1063' == code || '1069' == code || '1150' == code || '1153' == code || '1246' == code || '1249' == code) {
+        else if( 1063 === code || 1069 === code || 1150 === code || 1153 === code || 1246 === code || 1249 === code) {
             return isDay ? PossibleRainDay : PossibleRainNight;
         }
-        else if( '1168' == code || '1171' == code || '1180' == code || '1183' == code || '1186' == code || '1189' == code || '1248' == code || '1147' == code || '1273' == code || '1276' == code) {
+        else if( 1168 === code || 1171 === code || 1180 === code || 1183 === code || 1186 === code || 1189 === code || 1248 === code || 1147 === code || 1273 === code || 1276 === code) {
             return isDay ? LiteRainDay : LiteRainNight;
         }
-        else if( (parseInt(code) >= 1192 && parseInt(code) <= 1201 )|| '1243' == code || '1246' == code || '1252' == code|| '1255' == code ) {
+        else if( (parseInt(code) >= 1192 && parseInt(code) <= 1201 )|| 1243 === code || 1246 === code || 1252 === code|| 1255 === code ) {
             return HeavyRain;
         }
-        else if( '1066' == code || '1072' == code || '1114' == code || '1117' == code || '1147' == code) {
+        else if( 1066 === code || 1072 === code || 1114 === code || 1117 === code || 1147 === code) {
             return isDay ? PossibleSnowDay : PossibleSnowNight;
         }
-        else if( ( parseInt(code) >= 1222 && parseInt(code) <= 1237 )  || '1258' == code || '1261' == code || '1264' == code || '1282' == code) {
+        else if( ( parseInt(code) >= 1222 && parseInt(code) <= 1237 )  || 1258 === code || 1261 === code || 1264 === code || 1282 === code) {
             return HeavySnow;
         }
-        else if( (parseInt(code) >= 1216 && parseInt(code) <= 1219) || '1279' == code ){
+        else if( (parseInt(code) >= 1216 && parseInt(code) <= 1219) || 1279 === code ){
             return isDay ? LightSnowDay : LightSnowNight;
         }
-        else if( '1087' == code ) {
+        else if( 1087 === code ) {
             return Thunder;
         }
 
