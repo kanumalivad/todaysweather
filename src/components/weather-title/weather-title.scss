@@ -33,9 +33,16 @@
     vertical-align: top;
 }
 
-.time-wrap{
+.date-time-wrap{
     font-size: 30px;
     font-weight: 300;
     float: right;
+}
+
+.date {
     line-height: 50px;
+}
+
+.time{
+    text-align: right;
 }

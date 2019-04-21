@@ -1,21 +1,33 @@
 import React from 'react';
 import './weather-title.scss';
-import logo from '../../assets/amcharts_weather_icons_1.0.0/animated/day-1.svg';
+
 
 class WeatherTitle extends React.Component {
+
+    constructor(props) {
+        super(props);
+    }
+
     render() {
+        const dateandtime = new Date ( this.props.location.localtime );
+        const time = dateandtime.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })
+        const date = dateandtime.toLocaleString('en-US', {year: 'numeric', month : 'short', day: '2-digit'})
+        
         return(
             <React.Fragment>
             <div className="title-wrap">
-                <div className="time-wrap">Saturday, 6:51 PM</div>
-                <div className="location">
-                    <span className="city">Sao Paulo, </span>
-                    <span className="country">Brazil</span>
+                <div className="date-time-wrap">
+                    <div className="date">{date}</div>
+                    <div className="time">{time}</div>
                 </div>
-                <div className="weather-tag">Mostly Cloudy</div>
+                <div className="location">
+                    <span className="city">{this.props.location.city}, </span>
+                    <span className="country">{this.props.location.country}</span>
+                </div>
+                <div className="weather-tag">{this.props.weather.text}</div>
                 <div className="temprature-wrap">
-                    <img src={logo} className="weather-icon"/>
-                    <span className="degree">24</span>
+                    <img src={this.props.weather.icon} className="weather-icon"/>
+                    <span className="degree">{this.props.weather.temp_c}</span>
                     <span className="celcius">&#8451;</span>
                 </div>
             </div>
