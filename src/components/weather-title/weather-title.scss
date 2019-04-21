@@ -46,3 +46,26 @@
 .time{
     text-align: right;
 }
+
+@media only screen and (max-width: 900px) {
+    .title-wrap {
+        padding-bottom: 150px;
+    }    
+}
+
+@media only screen and (max-width: 740px) {
+    .title-wrap {
+        padding-bottom: 70px;
+    }    
+}
+
+@media only screen and (max-width: 540px) {
+
+    .date-time-wrap{
+        float: none;
+    }
+    .time{
+        text-align: left;
+        padding-bottom: 10px;
+    } 
+}
