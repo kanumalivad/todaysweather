@@ -104,7 +104,7 @@ class App extends React.Component{
     }
 
     getCurrentWeather(ip) {
-        fetch( `http://api.apixu.com/v1/forecast.json?key=2e726aa1bb35434fa8f202347192004&q=${ip}&days=7` )
+        fetch( `https://api.apixu.com/v1/forecast.json?key=2e726aa1bb35434fa8f202347192004&q=${ip}&days=7` )
             .then( res => res.json())
                 .then( data => {
                     const forecast = [];
